@@ -76,6 +76,8 @@ main(void)
         for(fj=-HEAT_MAP_RADIUS; fj<HEAT_MAP_RADIUS; fj+=HEAT_MAP_RESOLUTION)
             fprintf(fp, "%.2f\t%.2f\t%e\n", fj, fi, vec3f_lenght(net_efield(charges, amountOfCharges, (Point3f){fj,fi,0}, 1)));
     
+    fclose(fp);
+    
     free(charges);
     charges = NULL;
 
