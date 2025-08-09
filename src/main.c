@@ -6,7 +6,7 @@
 #include "types.h"
 
 #define HEAT_MAP_RADIUS 5
-#define HEAT_MAP_RESOLUTION 5
+#define HEAT_MAP_RESOLUTION 0.1
 
 int 
 charges_enter(Charge **chargesArray)
